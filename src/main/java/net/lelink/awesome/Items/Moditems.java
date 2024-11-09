@@ -27,6 +27,8 @@ public class Moditems {
 
     public static  final RegistryObject<Item> BISCUIT = ITEMS.register("biscuit",
             () -> new Item(new Item.Properties().food(modFoods.BISCUIT)));
+    public static  final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().food(modFoods.TOMATO)));
 
     public static  final RegistryObject<Item> RUBY_STAFF = ITEMS.register("ruby_staff",
             () -> new RubyStaffItem(new Item.Properties().stacksTo(1).durability(50)));

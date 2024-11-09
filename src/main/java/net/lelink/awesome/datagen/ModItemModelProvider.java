@@ -52,6 +52,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(Moditems.METAL_DETECTOR);
         simpleItem(Moditems.PINE_CONE);
         simpleItem(Moditems.BISCUIT);
+        simpleItem(Moditems.TOMATO);
 
         simpleBlockItem(ModBlocks.RUBY_DOOR);
 

@@ -8,4 +8,7 @@ import net.minecraft.world.food.FoodProperties;
 public class modFoods {
     public static final FoodProperties BISCUIT = new FoodProperties.Builder().fast().nutrition(3)
             .saturationMod(0.3f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100), 0.2f).build();
+
+    public static final FoodProperties TOMATO = new FoodProperties.Builder().fast().nutrition(4)
+            .saturationMod(0.5f).build();
 }

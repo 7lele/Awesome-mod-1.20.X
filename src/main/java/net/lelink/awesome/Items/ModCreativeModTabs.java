@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                 output.accept(Moditems.RAW_RUBY.get());
                 output.accept(Moditems.METAL_DETECTOR.get());
                 output.accept(Moditems.BISCUIT.get());
+                output.accept(Moditems.TOMATO.get());
                 output.accept(Moditems.PINE_CONE.get());
 
                 output.accept(Moditems.RUBY_STAFF.get());
