@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-01T16:53:54.097299	Loot Tables
+// 1.20.1	2024-11-10T11:03:08.918347	Loot Tables
 bab362497359740a1ecc3e9aaf385781460c05a4 data/awesome/loot_tables/blocks/deepslate_ruby_ore.json
 48f2c7e973e99e447e1a283d0f1dfecd2c84cc93 data/awesome/loot_tables/blocks/end_stone_ruby_ore.json
 1535e2360422df7a128c1fbb6c9d621078e00808 data/awesome/loot_tables/blocks/nether_ruby_ore.json
@@ -14,3 +14,4 @@ b6567750d2a2b31cdf1df8e1e04a2dd781560d63 data/awesome/loot_tables/blocks/ruby_pr
 77309c615c54098049ec8cc8a48285cc73796dcd data/awesome/loot_tables/blocks/ruby_trapdoor.json
 33f908c6754d6ed0b30f21fc80a657592f35da26 data/awesome/loot_tables/blocks/ruby_wall.json
 5b433088a0c632183e992bc43e12cd40d8e530a9 data/awesome/loot_tables/blocks/sound_block.json
+42810b8cdf71becc37035a4481a9a9a1c0adc790 data/awesome/loot_tables/blocks/tomato_crop.json

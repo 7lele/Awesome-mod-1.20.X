@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-09T18:53:42.249173	Item Models: awesome
+// 1.20.1	2024-11-10T11:03:08.920756	Item Models: awesome
 28428af4b0cd59bce8aee432f64dfa35a8e0be49 assets/awesome/models/item/biscuit.json
 6710fc7879ef602272b1bd1d644868d7793bb6a7 assets/awesome/models/item/metal_detector.json
 3176eaab21f5914ef371614fcf5aa3cf8f2d4465 assets/awesome/models/item/pine_cone.json
@@ -63,3 +63,4 @@ bd8af98e4ccf1eee3edbc9872721976fab468614 assets/awesome/models/item/ruby_slab.js
 3d0fd6495ee2379b140742c2d36b56b772270824 assets/awesome/models/item/ruby_trapdoor.json
 d898bcd65a117a257be37a7e50a96fe09d3e0699 assets/awesome/models/item/ruby_wall.json
 f08eed3825177640981c941771aedd0e99e59103 assets/awesome/models/item/tomato.json
+a03cd37b98d54097c4b91b9857f8cda144e4f728 assets/awesome/models/item/tomato_seeds.json

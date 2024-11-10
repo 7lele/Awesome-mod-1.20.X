@@ -44,10 +44,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.RUBY_DOOR.get()), modLoc("block/ruby_door_bottom"), modLoc("block/ruby_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.RUBY_TRAPDOOR.get()), modLoc("block/ruby_door_bottom"), true, "cutout");
 
-
+        makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
 
     }
-    public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {
+    public void makeTomatoCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> tomatoStates(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
