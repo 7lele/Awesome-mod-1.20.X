@@ -5,6 +5,7 @@ import net.lelink.awesome.Items.custom.FuelItem;
 import net.lelink.awesome.Items.custom.MetalDetectorItem;
 import net.lelink.awesome.Items.custom.ModArmorItem;
 import net.lelink.awesome.Items.custom.RubyStaffItem;
+import net.lelink.awesome.block.ModBlocks;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -67,6 +68,11 @@ public class Moditems {
             () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static  final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
+    public static  final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+
 
 
     public  static  void register(IEventBus eventBus) {

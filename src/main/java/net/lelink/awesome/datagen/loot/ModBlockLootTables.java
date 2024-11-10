@@ -2,6 +2,8 @@ package net.lelink.awesome.datagen.loot;
 
 import net.lelink.awesome.Items.Moditems;
 import net.lelink.awesome.block.ModBlocks;
+import net.lelink.awesome.block.customs.TomatoCropBlock;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.flag.FeatureFlagSet;
@@ -15,6 +17,8 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -54,6 +58,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.RUBY_SLAB.get()));
         this.add(ModBlocks.RUBY_DOOR.get(),
                 block -> createDoorTable(ModBlocks.RUBY_DOOR.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 5));
+
+        this.add(ModBlocks.TOMATO_CROP.get(),createCropDrops(ModBlocks.TOMATO_CROP.get(), Moditems.TOMATO.get(),
+                Moditems.TOMATO_SEEDS.get(), lootitemcondition$builder));
+
 
     }
 

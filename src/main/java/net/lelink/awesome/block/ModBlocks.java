@@ -3,6 +3,7 @@ package net.lelink.awesome.block;
 import net.lelink.awesome.Awesome;
 import net.lelink.awesome.Items.Moditems;
 import net.lelink.awesome.block.customs.SoundBlock;
+import net.lelink.awesome.block.customs.TomatoCropBlock;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -78,6 +79,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_TRAPDOOR = registerBlocks("ruby_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.WOOD).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> TOMATO_CROP = registerBlocks("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.SWEET_BERRY_BUSH).noOcclusion().noCollission()));
+
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlocks(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
